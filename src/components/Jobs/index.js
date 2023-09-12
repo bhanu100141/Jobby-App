@@ -96,7 +96,7 @@ class Jobs extends Component {
 
   successProfile = () => {
     const {profileData, searchInput} = this.state
-    const {name, profileImageUrl, shortBio} = profileData
+    const {profileImageUrl} = profileData
     return (
       <>
         <div className="sm-searchbar-holder">
@@ -119,8 +119,8 @@ class Jobs extends Component {
         </div>
         <div className="success-profile-container">
           <img src={profileImageUrl} className="profile-image" alt="profile" />
-          <h1 className="profile-name">{name}</h1>
-          <p className="profile-description">{shortBio}</p>
+          <h1 className="profile-name">Bhanu Prasad Vepakayala</h1>
+          <p className="profile-description">MERN Stack Developer</p>
         </div>
       </>
     )
